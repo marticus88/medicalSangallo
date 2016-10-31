@@ -55,6 +55,7 @@ if (checkLogin($_POST)) {
                         <thead>
                         <tr>
                             <th>Titolo</th>
+                            <th>Categoria</th>
                             <th>Data Creazione</th>
                             <th></th>
                         </tr>

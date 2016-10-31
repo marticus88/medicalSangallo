@@ -96,16 +96,18 @@ function printFitness()
 function printArticolo($articolo)
 {
     echo "<div class=\"post animated\" data-animation=\"fadeIn\" data-animation-delay=\"100\">";
-    echo "<div class=\"relative fullwidth flex\">";
-    echo "<ul class=\"post-slides\">";
-    echo "<li class=\"post-slide\">";
-    echo "<img src=\"images/blog/" . $articolo['pathImg'] . "\" alt=\"\"/>";
-    echo "</li>";
-    echo "<li class=\"clear\"></li>";
-    echo "</ul>";
-    echo "</div>";
-    echo "<div class=\"post-inner\">";
+    if($articolo['pathImg']!= '') {
+        echo "<div class=\"relative fullwidth flex\">";
+        echo "<ul class=\"post-slides\">";
+        echo "<li class=\"post-slide\">";
+        echo "<img src=\"images/blog/" . $articolo['pathImg'] . "\" alt=\"\"/>";
+        echo "</li>";
+        echo "<li class=\"clear\"></li>";
+        echo "</ul>";
+        echo "</div>";
+    }
 
+    echo "<div class=\"post-inner\">";
     echo "<div class=\"post-details\">";
     echo "<h1 class=\"normal post-header\">";
     echo $articolo['titolo'];
@@ -143,14 +145,17 @@ function printArticoloForPage($articolo)
     echo "<div class=\"inner blog\">";
     echo "<div class=\" posts\">";
     echo "<div class=\"post animated\" data-animation=\"fadeIn\" data-animation-delay=\"100\">";
-    echo "<div class=\"relative fullwidth flex\">";
-    echo "<ul class=\"post-slides\">";
-    echo "<li class=\"post-slide\">";
-    echo "<img src=\"images/blog/" . $articolo['pathImg'] . "\" alt=\"\"/>";
-    echo "</li>";
-    echo "<li class=\"clear\"></li>";
-    echo "</ul>";
-    echo "</div>";
+
+    if($articolo['pathImg']!= ''){
+        echo "<div class=\"relative fullwidth flex\">";
+        echo "<ul class=\"post-slides\">";
+        echo "<li class=\"post-slide\">";
+        echo "<img src=\"images/blog/" . $articolo['pathImg'] . "\" alt=\"\"/>";
+        echo "</li>";
+        echo "<li class=\"clear\"></li>";
+        echo "</ul>";
+        echo "</div>";
+    }
     echo "<div class=\"post-inner\">";
     echo "<div class=\"post-details\">";
     echo "<h1 class=\"normal post-header\">";

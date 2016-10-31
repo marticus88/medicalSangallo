@@ -2,6 +2,9 @@
 
 require_once('variabili.php');
 
+$database = "database/medicalSangallo.db";
+$maxArticoli = 4;
+
 function changePosition($id, $posizione, $newPosizione)
 {
     $idSwap = getArticoloIdByPosizione($newPosizione);
@@ -22,7 +25,8 @@ function getNumeroArticoli()
 
 function setPosizioneById($id, $posizione)
 {
-    $db = new SQLite3('database/medicalSangallo.db');
+    global $database;
+    $db = new SQLite3($database);
     $query = 'update articolo set posizione=' . $posizione . ' where id=' . $id;
     $db->exec($query);
     $db->close();
@@ -31,7 +35,8 @@ function setPosizioneById($id, $posizione)
 
 function getArticoloIdByPosizione($posizione)
 {
-    $db = new SQLite3('database/medicalSangallo.db');
+    global $database;
+    $db = new SQLite3($database);
     $query = 'select id from articolo where posizione=\'' . $posizione . '\'';
     $results = $db->query($query);
     $db->close();
@@ -42,7 +47,8 @@ function getArticoloIdByPosizione($posizione)
 
 function deleteArticolo($id)
 {
-    $db = new SQLite3('database/medicalSangallo.db');
+    global $database;
+    $db = new SQLite3($database);
     $query = 'delete from articolo where id=\'' . $id . '\'';
     $db->exec($query);
     $db->close();
@@ -52,7 +58,8 @@ function deleteArticolo($id)
 function updatePosizione($idOld)
 {
     $articoli = getArticoliInEvidenza();
-    $db = new SQLite3('database/medicalSangallo.db');
+    global $database;
+    $db = new SQLite3($database);
     $query = 'select * from articolo where homepage=1 order by posizione';
     $articoli = $db->query($query);
     while ($articolo = $articoli->fetchArray()) {
@@ -74,14 +81,16 @@ function changeEvidenza($id, $value)
         $query = 'update articolo set homepage=' . $value . ',posizione=0 where id=' . $id;
         updatePosizione($id);
     }
-    $db = new SQLite3('database/medicalSangallo.db');
+    global $database;
+    $db = new SQLite3($database);
     $db->exec($query);
     $db->close();
 }
 
 function getArticolo($id)
 {
-    $db = new SQLite3('database/medicalSangallo.db');
+    global $database;
+    $db = new SQLite3($database);
     $query = 'select * from articolo where id=\'' . $id . '\'';
     $results = $db->query($query);
     $db->close();
@@ -90,7 +99,8 @@ function getArticolo($id)
 
 function getArticoliInEvidenza()
 {
-    $db = new SQLite3('database/medicalSangallo.db');
+    global $database;
+    $db = new SQLite3($database);
     $query = 'select * from articolo where homepage=1 order by posizione';
     $results = $db->query($query);
     return $results;
@@ -116,7 +126,8 @@ function printAllertMaxArticoli(){
 
 function printArticoliNotInEvidenza(){
 
-    $db = new SQLite3('database/medicalSangallo.db');
+    global $database;
+    $db = new SQLite3($database);
     $query = 'select * from articolo where homepage=0';
     $results = $db->query($query);
     while ($articolo = $results->fetchArray()) {

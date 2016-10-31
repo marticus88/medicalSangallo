@@ -15,5 +15,3 @@ deleteArticolo($id);
 
 header('Location: '.$dashboard);
 
-
-?>

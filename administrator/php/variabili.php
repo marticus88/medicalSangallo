@@ -1,14 +1,13 @@
 <?php
 $header = "html/header.html";
 $footer = "html/footer.html";
-$database = "database/medicalSangallo.db";
 $index = "index.php";
 $home = "../index.html";
 $dashboard = "dashboard.php";
 $changeStatus = "changeStatus.php";
 $deleteArticolo = "deleteArticolo.php";
 $changeOrder = "changeOrder.php";
-$maxArticoli = 3;
+
 
 $pagine = array(
     array(
@@ -25,6 +24,10 @@ $pagine = array(
         'nome' => 'Salva Mailing List',
         'link' => 'mailingList.php',
         'icon' => 'save'
+    ),
+    array(
+        'nome' => 'Esci',
+        'link' => 'logout.php',
+        'icon' => 'sign-out'
     )
 );
-?>

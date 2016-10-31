@@ -19,17 +19,6 @@ function printNavbar()
     echo '<img src="img/logo.png" alt="" style="height: 30px;">';
     echo '</a>';
     echo '</div>';
-    echo '<ul class="nav navbar-top-links navbar-right">';
-    echo '<li class="dropdown">';
-    echo '<a class="dropdown-toggle" data-toggle="dropdown" href="#">';
-    echo '<i class="fa fa-user fa-fw"></i>  <i class="fa fa-caret-down"></i>';
-    echo '</a>';
-    echo '<ul class="dropdown-menu dropdown-messages">';
-    echo '<li><a href="logout.php"><i class="fa fa-sign-out fa-fw"></i> Logout</a>';
-    echo '</li>';
-    echo '</ul>';
-    echo '</li>';
-    echo '</ul>';
     printSidebar();
     echo '</nav';
 }
@@ -95,6 +84,7 @@ function printRowDashbord($articolo)
 {
     echo "<tr>";
     echo "<td>" . $articolo['titolo'] . "</td>";
+    echo "<td>" . $articolo['categoria'] . "</td>";
     echo "<td>" . $articolo['data_creazione'] . "</td>";
     echo "<td>";
     echo '<div style="display: inline-flex;">';
