@@ -23,10 +23,10 @@ $mail = new PHPMailer();
 $mail->IsSMTP();                                 		 // send via SMTP
 $mail->Host     = "smtp.gmail.com"; 					 // SMTP server
 $mail->SMTPAuth = true;    								 // turn on SMTP authentication
-$mail->Username = "marticus88@gmail.com"; 			     // SMTP username
-$mail->Password = "1nf1n1tY!";							 // SMTP password
+$mail->Username = "onboxtest@gmail.com"; 			     // SMTP username
+$mail->Password = "Password.01";							 // SMTP password
 
-$mail->From     = "marticus88@gmail.com";				 // SMTP username
+$mail->From     = "onboxtest@gmail.com";				 // SMTP username
 $mail->AddAddress("your-email@domain.com");			  	 // Your Adress
 $mail->Subject  =  "Nuova Mail dal sito Medical Sangallo !";
 $mail->IsHTML(true);

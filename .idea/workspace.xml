@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ba3d335a-9a98-4755-bc8a-023b962fa320" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/administrator/saveArticolo.php" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/blog/1uno.jpg" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/administrator/database/medicalSangallo.db" afterPath="$PROJECT_DIR$/administrator/database/medicalSangallo.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/administrator/nuovoArticolo.php" afterPath="$PROJECT_DIR$/administrator/nuovoArticolo.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/administrator/test.php" afterPath="$PROJECT_DIR$/administrator/test.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog_page.php" afterPath="$PROJECT_DIR$/blog_page.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/utilityFrontEnd.php" afterPath="$PROJECT_DIR$/php/utilityFrontEnd.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/mail.php" afterPath="$PROJECT_DIR$/php/mail.php" />
     </list>
     <ignored path="Medical Sangallo.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -40,11 +33,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="utilityFrontEnd.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="utilityFrontEnd.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/php/utilityFrontEnd.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="348">
-              <caret line="184" column="36" selection-start-line="184" selection-start-column="36" selection-end-line="184" selection-end-column="36" />
+            <state relative-caret-position="297">
+              <caret line="181" column="0" selection-start-line="181" selection-start-column="0" selection-end-line="181" selection-end-column="0" />
               <folding>
                 <element signature="n#printInEvidenza#0;n#!!top" expanded="false" />
                 <element signature="n#getArticoliFitness#0;n#!!top" expanded="false" />
@@ -92,6 +85,16 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="mail.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/php/mail.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="442">
+              <caret line="26" column="30" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="test.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -110,7 +113,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/php/mail.php" />
         <option value="$PROJECT_DIR$/blog_fitness.html" />
         <option value="$PROJECT_DIR$/php/varibiliFrontEnd.php" />
         <option value="$PROJECT_DIR$/php/utility.php" />
@@ -130,6 +132,7 @@
         <option value="$PROJECT_DIR$/blog_page.php" />
         <option value="$PROJECT_DIR$/test.html" />
         <option value="$PROJECT_DIR$/php/utilityFrontEnd.php" />
+        <option value="$PROJECT_DIR$/php/mail.php" />
       </list>
     </option>
   </component>
@@ -187,6 +190,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="newMedical" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="newMedical" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="newMedical" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="php" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -289,12 +306,12 @@
       <option name="presentableId" value="Default" />
       <updated>1477917801544</updated>
       <workItem from="1477917802713" duration="14804000" />
-      <workItem from="1477935098623" duration="3371000" />
+      <workItem from="1477935098623" duration="4243000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18175000" />
+    <option name="totallyTimeSpent" value="19047000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -376,14 +393,6 @@
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/blue/index.html" />
-    <entry file="file://$PROJECT_DIR$/php/mail.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="41" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/administrator/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -601,8 +610,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/php/utilityFrontEnd.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="184" column="36" selection-start-line="184" selection-start-column="36" selection-end-line="184" selection-end-column="36" />
+        <state relative-caret-position="297">
+          <caret line="181" column="0" selection-start-line="181" selection-start-column="0" selection-end-line="181" selection-end-column="0" />
           <folding>
             <element signature="n#printInEvidenza#0;n#!!top" expanded="false" />
             <element signature="n#getArticoliFitness#0;n#!!top" expanded="false" />
@@ -646,6 +655,14 @@
             <marker date="1477938442401" expanded="true" signature="5093:5431" ph="..." />
             <marker date="1477938442401" expanded="true" signature="5114:5383" ph="{...}" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/mail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="30" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
+          <folding />
         </state>
       </provider>
     </entry>
