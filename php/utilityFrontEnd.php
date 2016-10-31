@@ -1,10 +1,5 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: marti
- * Date: 31/10/2016
- * Time: 14:01
- */
+
 $database = "administrator/database/medicalSangallo.db";
 
 function insertNewsletter($email)
@@ -167,7 +162,20 @@ function printArticoloForPage($articolo)
     echo "<div class=\"clear\"></div>";
     echo "</div>";
     echo "</section>";
+
+
+    echo "<section id=\"blog\" class=\"container\">";
+    echo "<div class=\"inner blog\">";
+    echo "<div class=\" posts\">";
+    echo "<div class=\"post animated\" data-animation=\"fadeIn\" data-animation-delay=\"100\">";
+    echo "<div class=\"relative fullwidth flex\">";
     printSocialFacebook($articolo);
+    printSocialTwitter();
+    echo "</div>";
+    echo "</div>";
+    echo "</div>";
+    echo "</div>";
+    echo "</section>";
 }
 
 function printHeaderArticolo($categoria)
@@ -178,6 +186,11 @@ function printHeaderArticolo($categoria)
     echo "<p class=\"light t-center\">" . $categoria . "</p>";
     echo "</div>";
     echo "</section>";
+}
+
+function printSocialTwitter()
+{
+    echo "<a href=\"https://twitter.com/share\" class=\"twitter-share-button\" data-text=\"Medical Sangallo\" data-size=\"large\" data-dnt=\"true\">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>";
 }
 
 function printSocialFacebook($articolo)
@@ -191,8 +204,40 @@ function printSocialFacebook($articolo)
     fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>";
 
-    $link="http://www.marticus88.altervista.org/medicalSangallo/";
-    $link.="blog_page.php?id=".$articolo['id']."&titolo=".$articolo['titolo'];
+    $link = "http://www.marticus88.altervista.org/medicalSangallo/";
+    $link .= "blog_page.php?id=" . $articolo['id'] . "&titolo=" . $articolo['titolo'];
 
-    echo "<div class=\"fb-like\" data-href=\"".$link."\" data-layout=\"standard\" data-action=\"like\" data-size=\"small\" data-show-faces=\"true\" data-share=\"true\"></div>";
+    echo "<div class=\"fb-like\" data-href=\"" . $link . "\" data-layout=\"standard\" data-action=\"like\" data-size=\"small\" data-show-faces=\"true\" data-share=\"true\"></div>";
 }
+
+function getArticoloForHeaderFacebook($id)
+{
+
+    $db = new SQLite3('administrator/database/medicalSangallo.db');
+    $query = 'select * from articolo where id=' . $id;
+    echo $query;
+
+    $results = $db->query($query);
+    while ($articolo = $results->fetchArray()) {
+        printHedearFacebook($articolo);
+    }
+
+}
+
+function printHedearFacebook($articolo)
+{
+
+    $link = "http://www.marticus88.altervista.org/medicalSangallo/";
+
+    $link .= "blog_page.php?id=" . $articolo['id'] . "&titolo=" . $articolo['titolo'];
+    echo "<title>Medical Sangallo " . $articolo['categoria'] . " blog - " . $articolo['titolo'] . "</title>";
+    echo "<meta property=\"og:url\"           content=\"" . $link . "\" />";
+    echo "<meta property=\"og:type\"          content=\"website\" />";
+    echo "<meta property=\"og:title\"         content=\"" . $articolo['titolo'] . "\" />";
+    echo "<meta property=\"og:description\"   content=\"" . $articolo['sottotitolo'] . "\" />";
+
+    $linkImg = $link . "images/blog/" . $articolo['pathImg'];
+    echo "<meta property=\"og:image\"         content=\"" . $linkImg . "\" />";
+
+}
+

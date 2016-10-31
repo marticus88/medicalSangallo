@@ -4,11 +4,20 @@
 <head>
 
     <meta charset="utf-8"/>
-    <title>Medical Sangallo Fitness blog - TITOLO DELL'ARTICOLO</title>
     <meta name="description" content=""/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
     <!--Favicon -->
     <link rel="icon" type="image/png" href="images/favicon.png"/>
+
+
+    <?php
+    if (!isset($_GET['id'])) {
+        header("Location: errorPage.html");
+    }
+    $id = $_GET['id'];
+    getArticoloForHeaderFacebook($id);
+    ?>
+
 
     <!-- CSS Files -->
 
