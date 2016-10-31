@@ -25,4 +25,4 @@ $db = new SQLite3('database/medicalSangallo.db');
 $query = 'insert into articolo (titolo,sottotitolo,testo,categoria,pathImg) values (\'' . $titolo . '\',\'' . $sottotitolo . '\',\'' . trim($testo) . '\',\'' . $categoria.'\',\''. $nameFile . '\')';
 $db->exec($query);
 $db->close();
-
+print_r($query);

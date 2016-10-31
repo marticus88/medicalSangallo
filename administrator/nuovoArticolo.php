@@ -24,7 +24,7 @@ if(isset($_SESSION['user'])){
             <!-- /.col-lg-12 -->
         </div>
 
-        <form method="post" action="test.php" enctype="multipart/form-data">
+        <form method="post" action="saveArticolo.php" enctype="multipart/form-data">
 
             <div class="form-group">
                 <label for="titolo">Titolo: </label>

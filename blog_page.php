@@ -83,6 +83,8 @@
 	getArticoloForPage($id);
 	?>
 
+
+
   	<!-- Footer -->
   	<footer class="footer">
   		<!-- Your Company Name -->

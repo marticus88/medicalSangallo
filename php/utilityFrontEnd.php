@@ -26,15 +26,17 @@ function printInEvidenza()
 function getInEvidenza()
 {
     $db = new SQLite3('administrator/database/medicalSangallo.db');
-    $query = 'select * from articolo where homepage=1';
+    $query = 'select * from articolo where homepage=1 ORDER BY posizione';
     $results = $db->query($query);
     return $results;
 
 }
 
+/************************* FISIOTERAPIA *****************************/
+
 function printFisioterapia()
 {
-    $results = getArticoliRiabilitazione();
+    $results = getArticoliFisioterapia();
 
     while ($articolo = $results->fetchArray()) {
         printArticolo($articolo);
@@ -49,6 +51,9 @@ function getArticoliFisioterapia()
     return $results;
 
 }
+
+/************************* RIABILITAZIONE *****************************/
+
 
 function printRiabilitazione()
 {
@@ -67,6 +72,8 @@ function getArticoliRiabilitazione()
     return $results;
 
 }
+
+/************************* FITNESS ***************************************/
 
 function getArticoliFitness()
 {
@@ -160,8 +167,7 @@ function printArticoloForPage($articolo)
     echo "<div class=\"clear\"></div>";
     echo "</div>";
     echo "</section>";
-
-
+    printSocialFacebook($articolo);
 }
 
 function printHeaderArticolo($categoria)
@@ -172,4 +178,21 @@ function printHeaderArticolo($categoria)
     echo "<p class=\"light t-center\">" . $categoria . "</p>";
     echo "</div>";
     echo "</section>";
+}
+
+function printSocialFacebook($articolo)
+{
+    echo "<div id=\"fb-root\"></div>
+<script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = \"//connect.facebook.net/it_IT/sdk.js#xfbml=1&version=v2.8&appId=460948520727040\";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>";
+
+    $link="http://www.marticus88.altervista.org/medicalSangallo/";
+    $link.="blog_page?id=".$articolo['id']."&titolo=".$articolo['titolo'];
+
+    echo "<div class=\"fb-like\" data-href=\"".$link."\" data-layout=\"standard\" data-action=\"like\" data-size=\"small\" data-show-faces=\"true\" data-share=\"true\"></div>";
 }
