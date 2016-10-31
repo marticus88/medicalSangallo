@@ -3,6 +3,7 @@
 require_once("php/variabili.php");
 require_once("php/utility.php");
 
+$categorie = array("Fitness","Riabilitazione","Fisioterapia");
 
 function printNavbar()
 {
@@ -161,5 +162,56 @@ function deleteButton($id)
     echo '</form>';
 }
 
+function printFormModifica($id)
+{
 
-?>
+    global $database;
+    global $categorie;
+    $db = new SQLite3($database);
+    $query = 'select * from articolo where id=\'' . $id . '\'';
+    $results = $db->query($query);
+
+    while ($articolo = $results->fetchArray()) {
+
+        echo '<input type="hidden" name="id" value="' . $id . '">';
+        echo "<div class=\"form-group\">";
+        echo "<label for=\"titolo\">Titolo: </label>";
+        echo "<input class=\"form-control\" type=\"text\" value=\"" . $articolo['titolo'] . "\" name=\"title\" id=\"titolo\" required=\"true\">";
+        echo "<p class=\"help-block\">Inserisci il titolo dell'articolo.</p>";
+        echo "</div>";
+
+        echo "<div class=\"form-group\">";
+        echo "<label for=\"sottotitolo\">Testo in anteprima: </label>";
+        echo "<input class=\"form-control\" type=\"text\" value=\"" . $articolo['sottotitolo'] . "\" name=\"subtitle\" id=\"sottotitolo\" required=\"true\">";
+        echo "<p class=\"help-block\">Inserisci il testo in anteprima per l'articolo.</p>";
+        echo "</div>";
+
+        echo "<div class=\"form-group\">";
+        echo "<label for=\"categoria\">Categoria: </label>";
+        echo "<select class=\"form-control\" name=\"category\" id=\"categoria\">";
+
+        foreach ($categorie as $i => $value) {
+            if($categorie[$i]!=$articolo['categoria']) {
+                echo "<option>" . $categorie[$i] . "</option>";
+            }else{
+                echo "<option selected=\"selected\">" . $categorie[$i] . "</option>";
+            }
+        }
+
+        echo "</option>";
+        echo "</select>";
+        echo "<p class=\"help-block\">Scegli la categoria alla quale apparterrà l'ariticolo.</p>";
+        echo "</div>";
+
+        echo "<div class=\"form-group\">";
+        echo "<label for=\"exampleInputFile\">Immagine: </label>";
+        echo "<input type=\"file\" class=\"form-control-file\" name=\"ufile\" id=\"exampleInputFile\" aria-describedby=\"fileHelp\">";
+        echo "<p class=\"help-block\">Inserisci l'immagine di anteprima.</p>";
+        echo "</div>";
+
+        echo "<div class=\"form-group\">";
+        echo "<textarea id=\"summernote\" name=\"articolo\" required=\"true\">".$articolo['testo']."</textarea>";
+        echo "</div>";
+    }
+
+}

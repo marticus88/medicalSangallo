@@ -4,8 +4,8 @@
 session_start();
 if(isset($_SESSION['user'])){
 } else{
-  header('Location: '.$index);
-  exit;
+    header('Location: '.$index);
+    exit;
 }
 ?>
 <?php echo file_get_contents($header);?>
@@ -23,6 +23,26 @@ if(isset($_SESSION['user'])){
             </div>
             <!-- /.col-lg-12 -->
         </div>
+
+        <form method="post" action="updateArticolo.php" enctype="multipart/form-data">
+
+            <?php
+            if (!isset($_POST['id'])) {
+                header("Location: errorPage.html");
+            }
+            $id = $_POST['id'];
+            printFormModifica($id);
+            ?>
+            <button type="submit">Salva</button>
+        </form>
+        <script>
+            $(document).ready(function() {
+                $('#summernote').summernote({
+                    minHeight: 350,
+
+                });
+            });
+        </script>
         <!-- /.row -->
     </div>
     <!-- /.container-fluid -->

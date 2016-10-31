@@ -24,6 +24,8 @@ if($_FILES['ufile']['name'] != "")
 }
 
 
+$query = 'UPDATE articolo set titolo = \'' . $titolo . '\', sottotitolo = \'' . $sottotitolo . '\', testo = \'' . trim($testo) . '\', categoria = \'' . $categoria . '\' where id=' . $_POST['id'];
+
 $db = new SQLite3('database/medicalSangallo.db');
 $query = 'insert into articolo (titolo,sottotitolo,testo,categoria,pathImg) values (\'' . $titolo . '\',\'' . $sottotitolo . '\',\'' . trim($testo) . '\',\'' . $categoria.'\',\''. $nameFile . '\')';
 $db->exec($query);

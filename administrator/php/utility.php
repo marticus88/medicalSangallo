@@ -87,15 +87,6 @@ function changeEvidenza($id, $value)
     $db->close();
 }
 
-function getArticolo($id)
-{
-    global $database;
-    $db = new SQLite3($database);
-    $query = 'select * from articolo where id=\'' . $id . '\'';
-    $results = $db->query($query);
-    $db->close();
-    return $results;
-}
 
 function getArticoliInEvidenza()
 {
