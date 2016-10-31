@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ba3d335a-9a98-4755-bc8a-023b962fa320" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog_page.php" afterPath="$PROJECT_DIR$/blog_page.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/utilityFrontEnd.php" afterPath="$PROJECT_DIR$/php/utilityFrontEnd.php" />
     </list>
     <ignored path="Medical Sangallo.iws" />
@@ -37,60 +36,48 @@
       <file leaf-file-name="utilityFrontEnd.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/php/utilityFrontEnd.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="311">
-              <caret line="192" column="455" selection-start-line="192" selection-start-column="455" selection-end-line="192" selection-end-column="455" />
+            <state relative-caret-position="136">
+              <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
               <folding>
-                <element signature="n#insertNewsletter#0;n#!!top" expanded="false" />
-                <element signature="n#printInEvidenza#0;n#!!top" expanded="false" />
-                <element signature="n#getInEvidenza#0;n#!!top" expanded="false" />
-                <element signature="n#printFisioterapia#0;n#!!top" expanded="false" />
-                <element signature="n#getArticoliFisioterapia#0;n#!!top" expanded="false" />
-                <element signature="n#printRiabilitazione#0;n#!!top" expanded="false" />
-                <element signature="n#getArticoliRiabilitazione#0;n#!!top" expanded="false" />
-                <element signature="n#getArticoliFitness#0;n#!!top" expanded="false" />
-                <element signature="n#printFitness#0;n#!!top" expanded="false" />
-                <element signature="n#printArticolo#0;n#!!top" expanded="false" />
-                <element signature="n#getArticoloForPage#0;n#!!top" expanded="false" />
                 <element signature="n#printHeaderArticolo#0;n#!!top" expanded="false" />
-                <element signature="n#getArticoloForHeaderFacebook#0;n#!!top" expanded="false" />
                 <element signature="n#printHedearFacebook#0;n#!!top" expanded="false" />
-                <marker date="1477945973483" expanded="true" signature="183:241" ph="insert into newsletter... " />
-                <marker date="1477945973483" expanded="true" signature="550:589" ph="select * fro... articolo" />
-                <marker date="1477945973483" expanded="true" signature="550:608" ph="select * fro... articolo" />
-                <marker date="1477945973483" expanded="true" signature="1028:1083" ph="select * fro... articolo" />
-                <marker date="1477945973483" expanded="true" signature="1512:1569" ph="select * fro... articolo" />
-                <marker date="1477945973483" expanded="true" signature="1823:1861" ph="select * fro... articolo" />
-                <marker date="1477945973483" expanded="true" signature="1823:1871" ph="select * fro... articolo" />
-                <marker date="1477945973483" expanded="true" signature="1823:1873" ph="select * fro... articolo" />
-                <marker date="1477945973483" expanded="true" signature="2559:2669" ph="..." />
-                <marker date="1477945973483" expanded="true" signature="2601:2669" ph="..." />
-                <marker date="1477945973483" expanded="true" signature="2647:2669" ph="..." />
-                <marker date="1477945973483" expanded="true" signature="2731:2753" ph="..." />
-                <marker date="1477945973483" expanded="true" signature="2817:2864" ph="..." />
-                <marker date="1477945973483" expanded="true" signature="2817:3046" ph="..." />
-                <marker date="1477945973483" expanded="true" signature="2817:3059" ph="..." />
-                <marker date="1477945973483" expanded="true" signature="3281:3313" ph="select * fro... articolo" />
-                <marker date="1477945973483" expanded="true" signature="3281:3320" ph="select * fro... articolo" />
-                <marker date="1477945973483" expanded="true" signature="3616:4540" ph="..." />
-                <marker date="1477945973483" expanded="true" signature="3655:4506" ph="..." />
-                <marker date="1477945973483" expanded="true" signature="3690:4442" ph="..." />
-                <marker date="1477945973483" expanded="true" signature="3787:4439" ph="..." />
-                <marker date="1477945973483" expanded="true" signature="3839:4086" ph="..." />
-                <marker date="1477945973483" expanded="true" signature="3878:4067" ph="..." />
-                <marker date="1477945973483" expanded="true" signature="3916:4011" ph="..." />
-                <marker date="1477945973483" expanded="true" signature="4125:4420" ph="..." />
-                <marker date="1477945973483" expanded="true" signature="4166:4179" ph="..." />
-                <marker date="1477945973483" expanded="true" signature="4166:4361" ph="..." />
-                <marker date="1477945973483" expanded="true" signature="4212:4234" ph="..." />
-                <marker date="1477945973483" expanded="true" signature="4212:4255" ph="..." />
-                <marker date="1477945973483" expanded="true" signature="4212:4260" ph="..." />
-                <marker date="1477945973483" expanded="true" signature="4296:4318" ph="..." />
-                <marker date="1477945973483" expanded="true" signature="4296:4342" ph="..." />
-                <marker date="1477945973483" expanded="true" signature="5089:5323" ph="..." />
-                <marker date="1477945973483" expanded="true" signature="5135:5300" ph="..." />
-                <marker date="1477945973483" expanded="true" signature="5907:6245" ph="..." />
-                <marker date="1477945973483" expanded="true" signature="5928:6197" ph="{...}" />
-                <marker date="1477945973483" expanded="true" signature="6719:6751" ph="select * fro... articolo" />
+                <marker date="1477946976430" expanded="true" signature="241:299" ph="insert into newsletter... " />
+                <marker date="1477946976430" expanded="true" signature="596:635" ph="select * fro... articolo" />
+                <marker date="1477946976430" expanded="true" signature="596:654" ph="select * fro... articolo" />
+                <marker date="1477946976430" expanded="true" signature="1062:1117" ph="select * fro... articolo" />
+                <marker date="1477946976430" expanded="true" signature="1534:1591" ph="select * fro... articolo" />
+                <marker date="1477946976430" expanded="true" signature="1833:1871" ph="select * fro... articolo" />
+                <marker date="1477946976430" expanded="true" signature="1833:1881" ph="select * fro... articolo" />
+                <marker date="1477946976430" expanded="true" signature="1833:1883" ph="select * fro... articolo" />
+                <marker date="1477946976430" expanded="true" signature="2568:2678" ph="..." />
+                <marker date="1477946976430" expanded="true" signature="2610:2678" ph="..." />
+                <marker date="1477946976430" expanded="true" signature="2656:2678" ph="..." />
+                <marker date="1477946976430" expanded="true" signature="2740:2762" ph="..." />
+                <marker date="1477946976430" expanded="true" signature="2826:2873" ph="..." />
+                <marker date="1477946976430" expanded="true" signature="2826:3055" ph="..." />
+                <marker date="1477946976430" expanded="true" signature="2826:3068" ph="..." />
+                <marker date="1477946976430" expanded="true" signature="3277:3309" ph="select * fro... articolo" />
+                <marker date="1477946976430" expanded="true" signature="3277:3316" ph="select * fro... articolo" />
+                <marker date="1477946976430" expanded="true" signature="3612:4536" ph="..." />
+                <marker date="1477946976430" expanded="true" signature="3651:4502" ph="..." />
+                <marker date="1477946976430" expanded="true" signature="3686:4438" ph="..." />
+                <marker date="1477946976430" expanded="true" signature="3783:4435" ph="..." />
+                <marker date="1477946976430" expanded="true" signature="3835:4082" ph="..." />
+                <marker date="1477946976430" expanded="true" signature="3874:4063" ph="..." />
+                <marker date="1477946976430" expanded="true" signature="3912:4007" ph="..." />
+                <marker date="1477946976430" expanded="true" signature="4121:4416" ph="..." />
+                <marker date="1477946976430" expanded="true" signature="4162:4175" ph="..." />
+                <marker date="1477946976430" expanded="true" signature="4162:4357" ph="..." />
+                <marker date="1477946976430" expanded="true" signature="4208:4230" ph="..." />
+                <marker date="1477946976430" expanded="true" signature="4208:4251" ph="..." />
+                <marker date="1477946976430" expanded="true" signature="4208:4256" ph="..." />
+                <marker date="1477946976430" expanded="true" signature="4292:4314" ph="..." />
+                <marker date="1477946976430" expanded="true" signature="4292:4338" ph="..." />
+                <marker date="1477946976430" expanded="true" signature="5085:5319" ph="..." />
+                <marker date="1477946976430" expanded="true" signature="5131:5296" ph="..." />
+                <marker date="1477946976430" expanded="true" signature="5903:6241" ph="..." />
+                <marker date="1477946976430" expanded="true" signature="5924:6193" ph="{...}" />
+                <marker date="1477946976430" expanded="true" signature="6680:6712" ph="select * fro... articolo" />
               </folding>
             </state>
           </provider>
@@ -297,12 +284,12 @@
       <option name="presentableId" value="Default" />
       <updated>1477917801544</updated>
       <workItem from="1477917802713" duration="14804000" />
-      <workItem from="1477935098623" duration="9131000" />
+      <workItem from="1477935098623" duration="10023000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23935000" />
+    <option name="totallyTimeSpent" value="24827000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -619,60 +606,48 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/php/utilityFrontEnd.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="192" column="455" selection-start-line="192" selection-start-column="455" selection-end-line="192" selection-end-column="455" />
+        <state relative-caret-position="136">
+          <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
           <folding>
-            <element signature="n#insertNewsletter#0;n#!!top" expanded="false" />
-            <element signature="n#printInEvidenza#0;n#!!top" expanded="false" />
-            <element signature="n#getInEvidenza#0;n#!!top" expanded="false" />
-            <element signature="n#printFisioterapia#0;n#!!top" expanded="false" />
-            <element signature="n#getArticoliFisioterapia#0;n#!!top" expanded="false" />
-            <element signature="n#printRiabilitazione#0;n#!!top" expanded="false" />
-            <element signature="n#getArticoliRiabilitazione#0;n#!!top" expanded="false" />
-            <element signature="n#getArticoliFitness#0;n#!!top" expanded="false" />
-            <element signature="n#printFitness#0;n#!!top" expanded="false" />
-            <element signature="n#printArticolo#0;n#!!top" expanded="false" />
-            <element signature="n#getArticoloForPage#0;n#!!top" expanded="false" />
             <element signature="n#printHeaderArticolo#0;n#!!top" expanded="false" />
-            <element signature="n#getArticoloForHeaderFacebook#0;n#!!top" expanded="false" />
             <element signature="n#printHedearFacebook#0;n#!!top" expanded="false" />
-            <marker date="1477945973483" expanded="true" signature="183:241" ph="insert into newsletter... " />
-            <marker date="1477945973483" expanded="true" signature="550:589" ph="select * fro... articolo" />
-            <marker date="1477945973483" expanded="true" signature="550:608" ph="select * fro... articolo" />
-            <marker date="1477945973483" expanded="true" signature="1028:1083" ph="select * fro... articolo" />
-            <marker date="1477945973483" expanded="true" signature="1512:1569" ph="select * fro... articolo" />
-            <marker date="1477945973483" expanded="true" signature="1823:1861" ph="select * fro... articolo" />
-            <marker date="1477945973483" expanded="true" signature="1823:1871" ph="select * fro... articolo" />
-            <marker date="1477945973483" expanded="true" signature="1823:1873" ph="select * fro... articolo" />
-            <marker date="1477945973483" expanded="true" signature="2559:2669" ph="..." />
-            <marker date="1477945973483" expanded="true" signature="2601:2669" ph="..." />
-            <marker date="1477945973483" expanded="true" signature="2647:2669" ph="..." />
-            <marker date="1477945973483" expanded="true" signature="2731:2753" ph="..." />
-            <marker date="1477945973483" expanded="true" signature="2817:2864" ph="..." />
-            <marker date="1477945973483" expanded="true" signature="2817:3046" ph="..." />
-            <marker date="1477945973483" expanded="true" signature="2817:3059" ph="..." />
-            <marker date="1477945973483" expanded="true" signature="3281:3313" ph="select * fro... articolo" />
-            <marker date="1477945973483" expanded="true" signature="3281:3320" ph="select * fro... articolo" />
-            <marker date="1477945973483" expanded="true" signature="3616:4540" ph="..." />
-            <marker date="1477945973483" expanded="true" signature="3655:4506" ph="..." />
-            <marker date="1477945973483" expanded="true" signature="3690:4442" ph="..." />
-            <marker date="1477945973483" expanded="true" signature="3787:4439" ph="..." />
-            <marker date="1477945973483" expanded="true" signature="3839:4086" ph="..." />
-            <marker date="1477945973483" expanded="true" signature="3878:4067" ph="..." />
-            <marker date="1477945973483" expanded="true" signature="3916:4011" ph="..." />
-            <marker date="1477945973483" expanded="true" signature="4125:4420" ph="..." />
-            <marker date="1477945973483" expanded="true" signature="4166:4179" ph="..." />
-            <marker date="1477945973483" expanded="true" signature="4166:4361" ph="..." />
-            <marker date="1477945973483" expanded="true" signature="4212:4234" ph="..." />
-            <marker date="1477945973483" expanded="true" signature="4212:4255" ph="..." />
-            <marker date="1477945973483" expanded="true" signature="4212:4260" ph="..." />
-            <marker date="1477945973483" expanded="true" signature="4296:4318" ph="..." />
-            <marker date="1477945973483" expanded="true" signature="4296:4342" ph="..." />
-            <marker date="1477945973483" expanded="true" signature="5089:5323" ph="..." />
-            <marker date="1477945973483" expanded="true" signature="5135:5300" ph="..." />
-            <marker date="1477945973483" expanded="true" signature="5907:6245" ph="..." />
-            <marker date="1477945973483" expanded="true" signature="5928:6197" ph="{...}" />
-            <marker date="1477945973483" expanded="true" signature="6719:6751" ph="select * fro... articolo" />
+            <marker date="1477946976430" expanded="true" signature="241:299" ph="insert into newsletter... " />
+            <marker date="1477946976430" expanded="true" signature="596:635" ph="select * fro... articolo" />
+            <marker date="1477946976430" expanded="true" signature="596:654" ph="select * fro... articolo" />
+            <marker date="1477946976430" expanded="true" signature="1062:1117" ph="select * fro... articolo" />
+            <marker date="1477946976430" expanded="true" signature="1534:1591" ph="select * fro... articolo" />
+            <marker date="1477946976430" expanded="true" signature="1833:1871" ph="select * fro... articolo" />
+            <marker date="1477946976430" expanded="true" signature="1833:1881" ph="select * fro... articolo" />
+            <marker date="1477946976430" expanded="true" signature="1833:1883" ph="select * fro... articolo" />
+            <marker date="1477946976430" expanded="true" signature="2568:2678" ph="..." />
+            <marker date="1477946976430" expanded="true" signature="2610:2678" ph="..." />
+            <marker date="1477946976430" expanded="true" signature="2656:2678" ph="..." />
+            <marker date="1477946976430" expanded="true" signature="2740:2762" ph="..." />
+            <marker date="1477946976430" expanded="true" signature="2826:2873" ph="..." />
+            <marker date="1477946976430" expanded="true" signature="2826:3055" ph="..." />
+            <marker date="1477946976430" expanded="true" signature="2826:3068" ph="..." />
+            <marker date="1477946976430" expanded="true" signature="3277:3309" ph="select * fro... articolo" />
+            <marker date="1477946976430" expanded="true" signature="3277:3316" ph="select * fro... articolo" />
+            <marker date="1477946976430" expanded="true" signature="3612:4536" ph="..." />
+            <marker date="1477946976430" expanded="true" signature="3651:4502" ph="..." />
+            <marker date="1477946976430" expanded="true" signature="3686:4438" ph="..." />
+            <marker date="1477946976430" expanded="true" signature="3783:4435" ph="..." />
+            <marker date="1477946976430" expanded="true" signature="3835:4082" ph="..." />
+            <marker date="1477946976430" expanded="true" signature="3874:4063" ph="..." />
+            <marker date="1477946976430" expanded="true" signature="3912:4007" ph="..." />
+            <marker date="1477946976430" expanded="true" signature="4121:4416" ph="..." />
+            <marker date="1477946976430" expanded="true" signature="4162:4175" ph="..." />
+            <marker date="1477946976430" expanded="true" signature="4162:4357" ph="..." />
+            <marker date="1477946976430" expanded="true" signature="4208:4230" ph="..." />
+            <marker date="1477946976430" expanded="true" signature="4208:4251" ph="..." />
+            <marker date="1477946976430" expanded="true" signature="4208:4256" ph="..." />
+            <marker date="1477946976430" expanded="true" signature="4292:4314" ph="..." />
+            <marker date="1477946976430" expanded="true" signature="4292:4338" ph="..." />
+            <marker date="1477946976430" expanded="true" signature="5085:5319" ph="..." />
+            <marker date="1477946976430" expanded="true" signature="5131:5296" ph="..." />
+            <marker date="1477946976430" expanded="true" signature="5903:6241" ph="..." />
+            <marker date="1477946976430" expanded="true" signature="5924:6193" ph="{...}" />
+            <marker date="1477946976430" expanded="true" signature="6680:6712" ph="select * fro... articolo" />
           </folding>
         </state>
       </provider>

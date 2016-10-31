@@ -1,10 +1,12 @@
 <?php
 
 $database = "administrator/database/medicalSangallo.db";
+$indirizzo = "http://www.marticus88.altervista.org/medicalSangallo/";
 
 function insertNewsletter($email)
 {
-    $db = new SQLite3('administrator/database/medicalSangallo.db');
+    global $database;
+    $db = new SQLite3($database);
     $query = 'insert into newsletter (email) values (\'' . $email . '\')';
     $db->exec($query);
     $db->close();
@@ -20,7 +22,8 @@ function printInEvidenza()
 
 function getInEvidenza()
 {
-    $db = new SQLite3('administrator/database/medicalSangallo.db');
+    global $database;
+    $db = new SQLite3($database);
     $query = 'select * from articolo where homepage=1 ORDER BY posizione';
     $results = $db->query($query);
     return $results;
@@ -40,7 +43,8 @@ function printFisioterapia()
 
 function getArticoliFisioterapia()
 {
-    $db = new SQLite3('administrator/database/medicalSangallo.db');
+    global $database;
+    $db = new SQLite3($database);
     $query = 'select * from articolo where categoria=\'Fisioterapia\'';
     $results = $db->query($query);
     return $results;
@@ -61,7 +65,8 @@ function printRiabilitazione()
 
 function getArticoliRiabilitazione()
 {
-    $db = new SQLite3('administrator/database/medicalSangallo.db');
+    global $database;
+    $db = new SQLite3($database);
     $query = 'select * from articolo where categoria=\'Riabilitazione\'';
     $results = $db->query($query);
     return $results;
@@ -72,7 +77,8 @@ function getArticoliRiabilitazione()
 
 function getArticoliFitness()
 {
-    $db = new SQLite3('administrator/database/medicalSangallo.db');
+    global $database;
+    $db = new SQLite3($database);
     $query = 'select * from articolo where categoria=\'Fitness\'';
     $results = $db->query($query);
     return $results;
@@ -82,7 +88,6 @@ function getArticoliFitness()
 function printFitness()
 {
     $results = getArticoliFitness();
-
     while ($articolo = $results->fetchArray()) {
         printArticolo($articolo);
     }
@@ -120,8 +125,8 @@ function printArticolo($articolo)
 
 function getArticoloForPage($id)
 {
-
-    $db = new SQLite3('administrator/database/medicalSangallo.db');
+    global $database;
+    $db = new SQLite3($database);
     $query = 'select * from articolo where id=' . $id;
     echo $query;
 
@@ -204,7 +209,8 @@ function printSocialFacebook($articolo)
     fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>";
 
-    $link = "http://www.marticus88.altervista.org/medicalSangallo/";
+    global $indirizzo;
+    $link = $indirizzo;
     $link .= "blog_page.php?id=" . $articolo['id'] . "&titolo=" . $articolo['titolo'];
 
     echo "<div class=\"fb-like\" data-href=\"" . $link . "\" data-layout=\"standard\" data-action=\"like\" data-size=\"small\" data-show-faces=\"true\" data-share=\"true\"></div>";
@@ -212,8 +218,8 @@ function printSocialFacebook($articolo)
 
 function getArticoloForHeaderFacebook($id)
 {
-
-    $db = new SQLite3('administrator/database/medicalSangallo.db');
+    global $database;
+    $db = new SQLite3($database);
     $query = 'select * from articolo where id=' . $id;
     echo $query;
 
@@ -227,10 +233,11 @@ function getArticoloForHeaderFacebook($id)
 function printHedearFacebook($articolo)
 {
 
-    $link = "http://www.marticus88.altervista.org/medicalSangallo/";
+    global $indirizzo;
+    $link = $indirizzo;
 
     $link .= "blog_page.php?id=" . $articolo['id'] . "&titolo=" . $articolo['titolo'];
-    echo "<title>Medical Sangallo " . $articolo['categoria'] . " blog - " . $articolo['titolo'] . "</title>";
+    echo "<title>Medical Sangallo " . $articolo['categoria'] . " Blog - " . $articolo['titolo'] . "</title>";
     echo "<meta property=\"og:url\"           content=\"" . $link . "\" />";
     echo "<meta property=\"og:type\"          content=\"website\" />";
     echo "<meta property=\"og:title\"         content=\"" . $articolo['titolo'] . "\" />";
