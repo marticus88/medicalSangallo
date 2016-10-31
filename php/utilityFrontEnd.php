@@ -192,7 +192,7 @@ function printSocialFacebook($articolo)
 }(document, 'script', 'facebook-jssdk'));</script>";
 
     $link="http://www.marticus88.altervista.org/medicalSangallo/";
-    $link.="blog_page?id=".$articolo['id']."&titolo=".$articolo['titolo'];
+    $link.="blog_page.php?id=".$articolo['id']."&titolo=".$articolo['titolo'];
 
     echo "<div class=\"fb-like\" data-href=\"".$link."\" data-layout=\"standard\" data-action=\"like\" data-size=\"small\" data-show-faces=\"true\" data-share=\"true\"></div>";
 }

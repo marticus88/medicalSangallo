@@ -4,7 +4,7 @@
 <head>
 
     <meta charset="utf-8"/>
-    <title>Medical Sangallo Fisioterapia blog</title>
+    <title>Medical Sangallo Blog</title>
     <meta name="description" content=""/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
     <!--Favicon -->
