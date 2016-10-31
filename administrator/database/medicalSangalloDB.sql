@@ -1,0 +1,26 @@
+CREATE TABLE articolo(
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  titolo TEXT UNIQUE NOT NULL,
+  sottotitolo TEXT UNIQUE NOT NULL,
+  testo TEXT NOT NULL,
+  homepage INT DEFAULT 0,
+  data_creazione DATE DEFAULT CURRENT_DATE NOT NULL,
+  posizione INT DEFAULT 0,
+  stato INT DEFAULT 1
+);
+
+CREATE TABLE newsletter(
+  email TEXT PRIMARY KEY NOT NULL
+);
+
+CREATE TABLE image(
+  id_articolo INTEGER NOT NULL,
+  id_image INTEGER PRIMARY KEY AUTOINCREMENT,
+  path_image TEXT NOT NULL,
+  FOREIGN KEY(id_articolo) REFERENCES articolo(id)
+);
+
+CREATE TABLE utente(
+  user TEXT PRIMARY KEY NOT NULL,
+  psw TEXT NOT NULL
+);
