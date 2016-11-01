@@ -2,7 +2,7 @@
 $header = "html/header.html";
 $footer = "html/footer.html";
 $index = "index.php";
-$home = "../index.html";
+$home = "../index.php";
 $dashboard = "dashboard.php";
 $changeStatus = "changeStatus.php";
 $deleteArticolo = "deleteArticolo.php";

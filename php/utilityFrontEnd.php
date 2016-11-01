@@ -253,3 +253,31 @@ function printHedearFacebook($articolo)
 
 }
 
+function getArticoloForHomePage(){
+
+    $results = getInEvidenza();
+    while ($articolo = $results->fetchArray()) {
+        printArticoloForHomePage($articolo);
+    }
+
+}
+
+function printArticoloForHomePage($articolo){
+
+    echo "<div class=\"blog-custom\">";
+    //todo creare css dinamico
+    echo "<section id=\"blogPageUnoImg\">";
+    echo "<div class=\"homeuno blog-pa pattern-black\">";
+    echo "</div>";
+    echo "</section>";
+    echo "<section id=\"blogpageunotext\" class=\"container parallax1 text-side-blogpage\">";
+    echo "<div class=\"inner\">";
+    $link = "blog_page.php?id=" . $articolo['id'] . "&titolo=" . $articolo['titolo'];
+    echo "<h1><a class=\"header bold black uppercase\" href=\"".$link."\">".$articolo['titolo']."</a></h1>";
+    echo "<h4 class=\"h-desc black\">";
+    echo $articolo['sottotitolo'];
+    echo "</h4>";
+    echo "</div>";
+    echo "</section>";
+    echo "</div>";
+}

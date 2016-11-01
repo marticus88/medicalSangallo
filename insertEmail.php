@@ -9,4 +9,4 @@ $email = $_POST['email'];
 
 insertNewsletter($email);
 
-header('Location: index.html');
+header('Location: index.php');

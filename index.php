@@ -1,3 +1,4 @@
+<?php require_once('php/utilityFrontEnd.php'); ?>
 <!DOCTYPE html>
 <html lang="it">
 <head>
@@ -229,98 +230,9 @@
 </section><!-- End Blockquote Section -->
 
 
-<!-- blog pag uno -->
-<div class="blog-custom">
-    <section id="blogPageUnoImg">
-        <div class="homeuno blog-pa pattern-black">
-        </div><!-- End blog page uno Details -->
-    </section><!-- End section -->
-
-
-    <!-- testo blog uno -->
-    <section id="blogpageunotext" class="container parallax1 text-side-blogpage">
-
-        <div class="inner">
-
-            <!-- titolo blog uno -->
-            <h1><a class="header bold black uppercase" href="#">the goods you need now !</a></h1>
-
-            <!-- testo blog uno -->
-            <h4 class="h-desc black">
-                Lorem ipsum sito dolo sic amen lutuur anora non ci sta un agioia che io posso aprire oggi e domani
-                Lorem ipsum sito dolo sic amen lutuur anora non ci sta un agioia che io posso aprire oggi e domani
-                Lorem ipsum sito dolo sic amen lutuur anora non ci sta un agioia che io posso aprire oggi e domani
-                Lorem ipsum sito dolo sic amen lutuur anora non ci sta un agioia che io posso aprire oggi e domani
-                Lorem ipsum sito dolo sic amen lutuur anora non ci sta un agioia che io posso aprire oggi e domani
-            </h4>
-
-        </div><!-- End blog uno Inner -->
-
-    </section><!-- End text blog uno Section -->
-</div>
-<!-- End blog page uno -->
-
-<!-- blog pag due -->
-<div class="blog-custom">
-    <section id="blogpPageDueImg">
-        <div class="homedue blog-pa  pattern-black">
-        </div><!-- End blog page due Details -->
-    </section><!-- End section -->
-
-
-    <!-- testo blog due -->
-    <section id="blogpageunotext" class="container parallax1 text-side-blogpage">
-
-        <div class="inner">
-
-            <!-- titolo blog due -->
-            <h1><a class="header bold black uppercase" href="#">the goods you need now !</a></h1>
-
-            <!-- testo blog due -->
-            <h4 class="h-desc black">
-                Lorem ipsum sito dolo sic amen lutuur anora non ci sta un agioia che io posso aprire oggi e domani
-                Lorem ipsum sito dolo sic amen lutuur anora non ci sta un agioia che io posso aprire oggi e domani
-                Lorem ipsum sito dolo sic amen lutuur anora non ci sta un agioia che io posso aprire oggi e domani
-                Lorem ipsum sito dolo sic amen lutuur anora non ci sta un agioia che io posso aprire oggi e domani
-                Lorem ipsum sito dolo sic amen lutuur anora non ci sta un agioia che io posso aprire oggi e domani
-            </h4>
-
-        </div><!-- End blog due Inner -->
-
-    </section><!-- End text blog due Section -->
-</div>
-<!-- End blog page due -->
-
-<!-- blog pag tre -->
-<div class="blog-uno">
-    <section id="blogpPageTreImg">
-        <div class="hometre blog-pa  pattern-black">
-        </div><!-- End blog page tre Details -->
-    </section><!-- End section -->
-
-
-    <!-- testo blog tre -->
-    <section id="blogpageunotext" class="container parallax1 text-side-blogpage">
-
-        <div class="inner">
-
-            <!-- titolo blog tre -->
-            <h1><a class="header bold black uppercase" href="#">the goods you need now !</a></h1>
-
-            <!-- testo blog tre -->
-            <h4 class="h-desc black">
-                Lorem ipsum sito dolo sic amen lutuur anora non ci sta un agioia che io posso aprire oggi e domani
-                Lorem ipsum sito dolo sic amen lutuur anora non ci sta un agioia che io posso aprire oggi e domani
-                Lorem ipsum sito dolo sic amen lutuur anora non ci sta un agioia che io posso aprire oggi e domani
-                Lorem ipsum sito dolo sic amen lutuur anora non ci sta un agioia che io posso aprire oggi e domani
-                Lorem ipsum sito dolo sic amen lutuur anora non ci sta un agioia che io posso aprire oggi e domani
-            </h4>
-
-        </div><!-- End blog tre Inner -->
-
-    </section><!-- End text blog tre Section -->
-</div>
-<!-- End blog page tre -->
+<?php
+getArticoloForHomePage();
+?>
 
 
 <section id="imgflut">
