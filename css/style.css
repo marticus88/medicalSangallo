@@ -383,22 +383,7 @@
 	.blog-pa:after{
 		clear: both;
 	}
-
-	/*blog 1*/
-	.homeuno{
-	background:url(../images/1uno.jpg) center center fixed;
-	}
-	/* fine blog 1*/
-	/* blog 2 */
-		.homedue{
-		background:url(../images/2due.jpg) center center fixed;
-	}
-	/* fine blog 2*/
-	/* blog 3 */
-	.hometre{
-		background:url(../images/3tre.jpg) center center fixed;
-	}
-	/* fine blog 3 */
+	
 	/* text side */
 	.text-side-blogpage{
 		background-color: white;

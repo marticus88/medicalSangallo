@@ -29,12 +29,11 @@
     <link id="changeable-colors" rel="stylesheet" href="css/colors/green.css"/>
 
     <!-- End CSS Files -->
+    <?php createCss();?>
 
 </head>
 
 <body>
-
-
 <!-- Page Loader -->
 <section id="pageloader">
     <div class="loader-item fa fa-spin colored-border"></div>

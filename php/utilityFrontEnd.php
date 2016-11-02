@@ -116,7 +116,7 @@ function printArticolo($articolo)
     echo $articolo['sottotitolo'];
     echo "</p>";
     echo "<p class=\"t-right\">";
-    $link = "blog_page.php?id=" . $articolo['id'] . "&titolo=" . $articolo['titolo'];
+    $link = "blog_page.php?id=" . $articolo['id'] . "&titolo=" . str_replace(' ', '-',$articolo['titolo']);
     echo "<a href=\"" . $link . "\" class=\"more-button light dark\">Scopri di più<i class=\"fa fa-arrow-circle-o-right gray1\"></i></a>";
     echo "</p>";
     echo "</div>";
@@ -216,7 +216,7 @@ function printSocialFacebook($articolo)
 
     global $indirizzo;
     $link = $indirizzo;
-    $link .= "blog_page.php?id=" . $articolo['id'] . "&titolo=" . $articolo['titolo'];
+    $link .= "blog_page.php?id=" . $articolo['id'] . "&titolo=" . str_replace(' ', '_',$articolo['titolo']);
 
     echo "<div class=\"fb-like\" data-href=\"" . $link . "\" data-layout=\"standard\" data-action=\"like\" data-size=\"small\" data-show-faces=\"true\" data-share=\"true\"></div>";
 }
@@ -241,7 +241,7 @@ function printHedearFacebook($articolo)
     global $indirizzo;
     $link = $indirizzo;
 
-    $link .= "blog_page.php?id=" . $articolo['id'] . "&titolo=" . $articolo['titolo'];
+    $link .= "blog_page.php?id=" . $articolo['id'] . "&titolo=" .str_replace(' ', '_',$articolo['titolo']);
     echo "<title>Medical Sangallo " . $articolo['categoria'] . " Blog - " . $articolo['titolo'] . "</title>";
     echo "<meta property=\"og:url\"           content=\"" . $link . "\" />";
     echo "<meta property=\"og:type\"          content=\"website\" />";
@@ -265,14 +265,13 @@ function getArticoloForHomePage(){
 function printArticoloForHomePage($articolo){
 
     echo "<div class=\"blog-custom\">";
-    //todo creare css dinamico
     echo "<section id=\"blogPageUnoImg\">";
-    echo "<div class=\"homeuno blog-pa pattern-black\">";
+    echo "<div class=\"".str_replace(' ', '_',$articolo['titolo'])." blog-pa pattern-black\">";
     echo "</div>";
     echo "</section>";
     echo "<section id=\"blogpageunotext\" class=\"container parallax1 text-side-blogpage\">";
     echo "<div class=\"inner\">";
-    $link = "blog_page.php?id=" . $articolo['id'] . "&titolo=" . $articolo['titolo'];
+    $link = "blog_page.php?id=" . $articolo['id'] . "&titolo=" . str_replace(' ', '_',$articolo['titolo']);
     echo "<h1><a class=\"header bold black uppercase\" href=\"".$link."\">".$articolo['titolo']."</a></h1>";
     echo "<h4 class=\"h-desc black\">";
     echo $articolo['sottotitolo'];
@@ -280,4 +279,19 @@ function printArticoloForHomePage($articolo){
     echo "</div>";
     echo "</section>";
     echo "</div>";
+}
+
+function createCss(){
+    echo "<style>";
+    $results = getInEvidenza();
+    while ($articolo = $results->fetchArray()) {
+        setCssForArticolo($articolo);
+    }
+    echo "</style>";
+}
+function setCssForArticolo($articolo){
+
+    echo ".".str_replace(' ', '_',$articolo['titolo'])."{";
+    echo "background:url(images/blog/".$articolo['pathImg'].") center center fixed;";
+	echo "}";
 }
