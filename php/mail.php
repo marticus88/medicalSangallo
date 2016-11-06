@@ -24,10 +24,10 @@ $mail->IsSMTP();                                 		 // send via SMTP
 $mail->Host     = "smtp.gmail.com"; 					 // SMTP server
 $mail->SMTPAuth = true;    								 // turn on SMTP authentication
 $mail->Username = "onboxtest@gmail.com"; 			     // SMTP username
-$mail->Password = "Password.01";							 // SMTP password
+$mail->Password = "Password.01";						 // SMTP password
 
 $mail->From     = "onboxtest@gmail.com";				 // SMTP username
-$mail->AddAddress("your-email@domain.com");			  	 // Your Adress
+$mail->AddAddress("t");			  	 // Your Adress
 $mail->Subject  =  "Nuova Mail dal sito Medical Sangallo !";
 $mail->IsHTML(true);
 $mail->CharSet = 'UTF-8';
