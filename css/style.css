@@ -230,6 +230,7 @@
 		position: absolute;
 	}
 
+/*  //scommentare per inserire retinatua sugli articoli del blog (gli altri pattern sono altri tipi di retinatura)
 	.pattern-black:after{
 		background: url(../images/pattern-black.png) repeat;
 		content:'';
@@ -239,6 +240,7 @@
 		left:0;
 		position: absolute;
 	}
+*/
 
 	.pattern-grid:after{
 		background: url(../images/pattern-grid.png) repeat;
@@ -375,10 +377,12 @@
 	.blog-pa{
 		position: relative;
 		width: 100%;
-		height: 700px;
-		top:0;
+		height: 450px;
 		background-size: cover !important;
-		position: relative;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
 	}
 	.blog-pa:after{
 		clear: both;

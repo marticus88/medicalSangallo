@@ -292,6 +292,6 @@ function createCss(){
 function setCssForArticolo($articolo){
 
     echo ".".str_replace(' ', '_',$articolo['titolo'])."{";
-    echo "background:url(images/blog/".$articolo['pathImg'].") center center fixed;";
+    echo "background:url(images/blog/".$articolo['pathImg'].") no-repeat center top;";
 	echo "}";
 }
